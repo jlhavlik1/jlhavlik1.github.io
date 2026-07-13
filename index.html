@@ -4,30 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>John Lyon Havlik — Computational Psychiatry &amp; Machine Learning</title>
-<meta name="description" content="Stanford psychiatry resident (MD, MBA) building and validating machine-learning models that identify and engage patients with psychiatric and substance use disorders.">
+<title>John Lyon Havlik - Computational Psychiatry &amp; Machine Learning</title>
+<meta name="description" content="Stanford psychiatry resident (MD, MBA) building and validating machine-learning models that identify people with psychiatric and substance use disorders, including untreated cases.">
 <meta name="author" content="John Lyon Havlik">
 <link rel="canonical" href="https://jlhavlik1.github.io/">
 <meta name="theme-color" content="#0d1017">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="profile">
-<meta property="og:title" content="John Lyon Havlik — Computational Psychiatry &amp; Machine Learning">
-<meta property="og:description" content="Stanford psychiatry resident (MD, MBA). Machine learning on real-world EHR data, psychiatric services research, and health policy — first-author work in Nature Mental Health, JAMA, and Science Advances.">
+<meta property="og:title" content="John Lyon Havlik - Computational Psychiatry &amp; Machine Learning">
+<meta property="og:description" content="Stanford psychiatry resident (MD, MBA). Machine learning for psychiatric and substance-use detection, psychiatric services research, and health policy - first-author work in Nature Mental Health, JAMA, and Science Advances.">
 <meta property="og:url" content="https://jlhavlik1.github.io/">
 <meta property="og:image" content="https://jlhavlik1.github.io/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="John Lyon Havlik, MD, MBA — computational psychiatry and machine learning.">
+<meta property="og:image:alt" content="John Lyon Havlik, MD, MBA - computational psychiatry and machine learning.">
 <meta property="profile:first_name" content="John">
 <meta property="profile:last_name" content="Havlik">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="John Lyon Havlik — Computational Psychiatry &amp; Machine Learning">
-<meta name="twitter:description" content="Stanford psychiatry resident (MD, MBA). Machine learning on real-world EHR data, psychiatric services research, and health policy.">
+<meta name="twitter:title" content="John Lyon Havlik - Computational Psychiatry &amp; Machine Learning">
+<meta name="twitter:description" content="Stanford psychiatry resident (MD, MBA). Machine learning for psychiatric and substance-use detection, psychiatric services research, and health policy.">
+<meta name="twitter:image:alt" content="John Lyon Havlik, MD, MBA - computational psychiatry and machine learning.">
 <meta name="twitter:image" content="https://jlhavlik1.github.io/assets/og.png">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
 <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
@@ -93,7 +95,7 @@
   .body{padding:32px 32px 40px;}
 
   /* Grid/flex children default to min-width:auto and refuse to shrink below
-     their content — which lets long mono strings blow past a phone viewport.
+     their content - which lets long mono strings blow past a phone viewport.
      Let every flexible child shrink so overflow is contained, not propagated. */
   :where(.io,.prow,.phead,.trow,.axis,.yb,.edu,.hrow,.work,.cols2) > *{min-width:0;}
   .hero,.hero > div,.lede{min-width:0;}
@@ -123,7 +125,7 @@
   .out1{padding:26px 26px 28px; background:var(--out);}
   .hero{display:flex; gap:26px; align-items:center; flex-wrap:wrap; margin-bottom:22px;}
   .avatar{
-    width:136px; height:136px; border-radius:16px; object-fit:cover; object-position:50% 18%;
+    width:136px; height:136px; border-radius:16px; object-fit:cover; object-position:50% 40%;
     border:2px solid rgba(88,224,138,.55); flex:none; background:var(--src);
   }
   .eyebrow{font:600 11px var(--mono); letter-spacing:.2em; text-transform:uppercase; color:var(--green); margin-bottom:10px;}
@@ -227,7 +229,7 @@
   .allbox .hrow .hy{color:var(--dim);} .allbox .hrow .ht{color:var(--dim2); font-size:12px;}
 
   /* ---- reviewers ---- */
-  .tags{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; list-style:none;}
   .tag-j{color:var(--str); border:1px solid rgba(88,224,138,.25); border-radius:6px; padding:4px 10px; font:400 12.5px var(--mono);}
   .tag-j.board{color:var(--orange); border-color:rgba(246,178,107,.45);}
   .bracket{color:var(--dim);}
@@ -245,6 +247,7 @@
   .skip{position:absolute; left:-9999px; top:8px; background:var(--nb); color:var(--green);
         padding:10px 16px; border-radius:8px; font:500 13px var(--mono); z-index:10;}
   .skip:focus{left:24px;}
+  .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
 
   /* animations */
   @keyframes growX{from{transform:scaleX(0);}to{transform:scaleX(1);}}
@@ -262,7 +265,8 @@
     .io{grid-template-columns:52px minmax(0,1fr);}
     .lbl{padding:12px 8px; font-size:11px;}
     .code{padding:12px 14px; font-size:12.5px;}
-    .edu{grid-template-columns:18px 56px minmax(0,1fr) minmax(0,1.05fr); gap:8px;}
+    .edu{grid-template-columns:14px 66px minmax(0,1fr) minmax(0,1fr); gap:8px; font-size:11.5px;}
+    .edu .deg,.edu .org{overflow-wrap:anywhere;}
     .axis, .trow{grid-template-columns:1fr; gap:3px;}
     .trow .tl{text-align:left;}
     .track{margin-bottom:7px;}
@@ -283,7 +287,7 @@
   "givenName":"John",
   "familyName":"Havlik",
   "url":"https://jlhavlik1.github.io/",
-  "email":"mailto:jhavlik@stanford.edu",
+  "email":"jhavlik@stanford.edu",
   "image":"https://jlhavlik1.github.io/assets/headshot.jpg",
   "jobTitle":"Psychiatry Resident",
   "worksFor":{"@type":"Organization","name":"Stanford University School of Medicine"},
@@ -300,7 +304,7 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<main id="main">
+<main id="main" tabindex="-1">
 <article class="nb" aria-label="Notebook: havlik.ipynb">
 
   <div class="bar">
@@ -314,7 +318,7 @@
   <div class="body">
 
     <!-- In [1] : whoami -->
-    <section class="cell" aria-label="whoami">
+    <section class="cell">
       <div class="io">
         <div class="lbl">In [1]:</div>
         <div class="code"><span class="c"># who is this?</span><br>
@@ -331,14 +335,14 @@
                  alt="Portrait of John Lyon Havlik" fetchpriority="high">
           </picture>
           <div>
-            <div class="eyebrow">Applying AI &amp; ML to improve psychiatry</div>
+            <div class="eyebrow">Computational psychiatry · machine learning · health policy</div>
             <h1 class="name">John Lyon Havlik</h1>
             <div class="sub">MD · MBA · Stanford Psychiatry</div>
           </div>
         </div>
         <div class="lede">
-          <p>Psychiatry resident in Stanford's Humanities and Social Medicine Research Track, as the track's inaugural resident. I build and validate machine-learning models — both probabilistic and deterministic — that identify and engage patients with psychiatric and substance use disorders using multimodal data, mentored by Keith Humphreys and Jonathan Chen. I am technical lead on a supervised ML model for EHR-based SUD detection accepted at <a href="#work">Nature Mental Health</a>.</p>
-          <p>Alongside this work I write on psychiatric services and health policy, including work in <a href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener">JAMA Health Forum</a> on private-equity residential treatment and <a href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener">JAMA Network Open</a> on the economics of telemedicine "house calls." The goal is to move models out of publications and into clinical workflows — to catch patients before they fall through the cracks in the mental-healthcare system. Before medicine, with Peggy Mason at UChicago, I found the human bystander effect in rats (<a href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener">Science Advances</a>).</p>
+          <p>I'm the inaugural resident in Stanford's Humanities and Social Medicine Research Track. I build and validate machine-learning models that identify people with psychiatric and substance use disorders - including the untreated cases the health system misses - mentored by Keith Humphreys and Jonathan Chen. As technical lead, I built a supervised model that detects substance use disorders from EHR-like data, accepted at <a href="#work">Nature Mental Health</a>.</p>
+          <p>Alongside the modeling, I write on psychiatric services and health policy - recent work in <a href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener">JAMA Health Forum</a> on private-equity residential treatment and <a href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener">JAMA Network Open</a> on the economics of telemedicine "house calls." The goal is to move models out of publications and into clinical workflows, and to reach patients earlier. Before medicine, with Peggy Mason at UChicago, I found the human bystander effect in rats (<a href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener">Science Advances</a>).</p>
         </div>
         <nav class="links" aria-label="Contact and profiles">
           <a href="cv.pdf" class="dl">↓ cv.pdf</a>
@@ -349,7 +353,8 @@
     </div>
 
     <!-- In [2] : selected_work -->
-    <section class="cell" id="work" aria-label="selected work">
+    <section class="cell" id="work">
+      <h2 class="sr-only">Selected work</h2>
       <div class="io">
         <div class="lbl">In [2]:</div>
         <div class="code"><span class="o">havlik</span>.<span class="f">selected_work</span>()  <span class="c"># most recent / highest-signal</span></div>
@@ -360,7 +365,7 @@
         <div class="card">
           <div class="venue"><span>Nature Mental Health</span><span class="yr">2026</span></div>
           <div class="desc">Supervised machine learning identifies people with untreated substance use disorders from EHR-like data. <span class="badge">accepted · in press</span></div>
-          <div class="tag">machine learning · real-world EHR · technical lead</div>
+          <div class="tag">machine learning · nationally representative data · technical lead</div>
         </div>
         <div class="card">
           <a class="venue" href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener"><span>JAMA Health Forum</span><span class="yr">2026</span></a>
@@ -369,19 +374,20 @@
         </div>
         <div class="card">
           <a class="venue" href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener"><span>JAMA Network Open</span><span class="yr">2026</span></a>
-          <div class="desc">When telemedicine "house calls" make clinical and economic sense — costs and outcomes in virtual care.</div>
+          <div class="desc">When telemedicine "house calls" make clinical and economic sense - costs and outcomes in virtual care.</div>
           <div class="tag">care delivery · economics · first author</div>
         </div>
         <div class="card">
           <a class="venue" href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener"><span>Science Advances</span><span class="yr">2020</span></a>
-          <div class="desc">First demonstration of the human bystander effect in rats — a controlled model of when we choose to help.</div>
+          <div class="desc">First demonstration of the human bystander effect in rats - a controlled model of when we choose to help.</div>
           <div class="tag">foundational science · first author</div>
         </div>
       </div>
     </div>
 
     <!-- In [3] : education -->
-    <section class="cell" aria-label="education">
+    <section class="cell">
+      <h2 class="sr-only">Education</h2>
       <div class="io">
         <div class="lbl">In [3]:</div>
         <div class="code"><span class="o">havlik</span>.education</div>
@@ -397,7 +403,8 @@
     </div>
 
     <!-- In [4] : timeline -->
-    <section class="cell" aria-label="timeline">
+    <section class="cell">
+      <h2 class="sr-only">Timeline</h2>
       <div class="io">
         <div class="lbl">In [4]:</div>
         <div class="code"><span class="o">havlik</span>.<span class="f">timeline</span>()  <span class="c"># 2015 to 2026</span></div>
@@ -430,7 +437,8 @@
     </div>
 
     <!-- In [5] : publications by year -->
-    <section class="cell" aria-label="publications by year">
+    <section class="cell">
+      <h2 class="sr-only">Publications by year</h2>
       <div class="io">
         <div class="lbl">In [5]:</div>
         <div class="code"><span class="o">havlik</span>.publications.<span class="f">groupby</span>(<span class="s">"year"</span>).<span class="f">size</span>()</div>
@@ -452,10 +460,11 @@
     </div>
 
     <!-- In [6] : publications.head -->
-    <section class="cell" aria-label="publications">
+    <section class="cell">
+      <h2 class="sr-only">Publications</h2>
       <div class="io">
         <div class="lbl">In [6]:</div>
-        <div class="code"><span class="o">havlik</span>.publications.<span class="f">head</span>(<span class="n">12</span>)</div>
+        <div class="code"><span class="o">havlik</span>.publications.<span class="f">query</span>(<span class="s">"flagship"</span>).<span class="f">head</span>(<span class="n">12</span>)</div>
       </div>
     </section>
     <div class="res tight">
@@ -528,7 +537,8 @@
     </details>
 
     <!-- In [7] : roles -->
-    <section class="cell" aria-label="roles">
+    <section class="cell">
+      <h2 class="sr-only">Roles</h2>
       <div class="io">
         <div class="lbl">In [7]:</div>
         <div class="code"><span class="o">havlik</span>.<span class="f">roles</span>()  <span class="c"># research, mentorship, venture</span></div>
@@ -551,7 +561,7 @@
           <div class="colh"># venture</div>
           <div class="role"><div class="role-h"><b>Venture Fellow · Continuum Health Ventures</b><span class="when">2023–2024</span></div>
             <p>Led diligence on digital and AI mental-health companies for VC investment; several reviewed went on to be funded.</p></div>
-          <div class="role"><div class="role-h"><b>Associate · Yale Ventures</b><span class="when">2021–2022</span></div>
+          <div class="role"><div class="role-h"><b>Associate · Yale Ventures</b><span class="when">2021</span></div>
             <p>Helped stand up Yale's biotech seed fund; sourced psychiatrist-founders and prepped financials and pitches.</p></div>
           <div class="colh" style="margin:18px 0 8px"># off_hours</div>
           <div class="off"><b>5,532 mi</b> · logged on an e-bike I designed and built for commuting in residency</div>
@@ -563,7 +573,8 @@
     </div>
 
     <!-- In [8] : honors -->
-    <section class="cell" aria-label="honors">
+    <section class="cell">
+      <h2 class="sr-only">Honors</h2>
       <div class="io">
         <div class="lbl">In [8]:</div>
         <div class="code"><span class="o">havlik</span>.honors  <span class="c"># most recent</span></div>
@@ -571,9 +582,10 @@
     </section>
     <div class="res tight">
       <div class="pad">
-        <div class="hrow"><span class="hy">2026</span><span class="ht">NIMH Outstanding Resident Award — NIMH's highest trainee honor (1 of 12 nationally)</span></div>
-        <div class="hrow"><span class="hy">2026–27</span><span class="ht">American Psychiatric Association Research Fellowship — one awarded nationally ($45,000/yr for mental-health services &amp; policy research)</span></div>
-        <div class="hrow"><span class="hy">2025</span><span class="ht">William &amp; Katharine Duhamel Addiction Medicine Grant ($23,220) — for an AI model for SUD screening</span></div>
+        <div class="hrow"><span class="hy">2026</span><span class="ht">NIMH Outstanding Resident Award - NIMH's highest trainee honor (1 of 12 nationally)</span></div>
+        <div class="hrow"><span class="hy">2026–27</span><span class="ht">American Psychiatric Association Research Fellowship - one awarded nationally ($45,000/yr for mental-health services &amp; policy research)</span></div>
+        <div class="hrow"><span class="hy">2026</span><span class="ht">Miller Foundation Fellowship for Psychiatric Services Research ($44,000) - a machine-learning model, built on Stanford's clinical EHR, to predict and prevent substance-use crises</span></div>
+        <div class="hrow"><span class="hy">2025</span><span class="ht">William &amp; Katharine Duhamel Addiction Medicine Grant ($23,220) - for an AI model for SUD screening</span></div>
         <div class="hrow"><span class="hy">2024–</span><span class="ht">Inaugural Humanities &amp; Social Medicine Research Track Resident, Stanford</span></div>
       </div>
     </div>
@@ -582,7 +594,7 @@
       <div class="allbox">
         <div class="hrow"><span class="hy">2019–24</span><span class="ht">Class President, Yale School of Medicine Entering Class of 2019</span></div>
         <div class="hrow"><span class="hy">2022</span><span class="ht">LCME Student Accreditation Co-Chair</span></div>
-        <div class="hrow"><span class="hy">2022–24</span><span class="ht">Dean's Merit Scholarship, Yale School of Management — quantitative methods in operations research</span></div>
+        <div class="hrow"><span class="hy">2022–24</span><span class="ht">Dean's Merit Scholarship, Yale School of Management - quantitative methods in operations research</span></div>
         <div class="hrow"><span class="hy">2023–24</span><span class="ht">Robert Malison, M.D. Student Research Fellowship</span></div>
         <div class="hrow"><span class="hy">2023</span><span class="ht">Lowe Award for Published Research, Yale School of Medicine</span></div>
         <div class="hrow"><span class="hy">2021–22</span><span class="ht">Yale School of Medicine Medical Education Steering Committee</span></div>
@@ -596,7 +608,8 @@
     </details>
 
     <!-- In [9] : peer review -->
-    <section class="cell" aria-label="peer review">
+    <section class="cell">
+      <h2 class="sr-only">Peer review</h2>
       <div class="io">
         <div class="lbl">In [9]:</div>
         <div class="code"><span class="o">havlik</span>.peer_review  <span class="c"># reviewer / editorial board · 16 venues</span></div>
@@ -604,26 +617,26 @@
     </section>
     <div class="res" style="margin-bottom:0;">
       <div class="pad22">
-        <span class="bracket">[</span>
-        <div class="tags">
-          <span class="tag-j board">"Academic Medicine (editorial board)"</span>
-          <span class="tag-j">"JAMA Network Open"</span>
-          <span class="tag-j">"NEJM AI"</span>
-          <span class="tag-j">"J. Clinical Psychiatry"</span>
-          <span class="tag-j">"J. Clinical Psychopharmacology"</span>
-          <span class="tag-j">"Health Informatics Journal"</span>
-          <span class="tag-j">"Epidemiology &amp; Psychiatric Sciences"</span>
-          <span class="tag-j">"Frontiers in Psychiatry"</span>
-          <span class="tag-j">"J. Racial &amp; Ethnic Health Disparities"</span>
-          <span class="tag-j">"J. General Internal Medicine"</span>
-          <span class="tag-j">"Population Health, Equity &amp; Outcomes"</span>
-          <span class="tag-j">"J. Personality Disorders"</span>
-          <span class="tag-j">"Psychological Trauma"</span>
-          <span class="tag-j">"Am. J. Drug &amp; Alcohol Abuse"</span>
-          <span class="tag-j">"BMC Medical Education"</span>
-          <span class="tag-j">"Pacific Symposium on Biocomputing"</span>
-        </div>
-        <span class="bracket">]</span>
+        <span class="bracket" aria-hidden="true">[</span>
+        <ul class="tags">
+          <li class="tag-j board">"Academic Medicine (editorial board)"</li>
+          <li class="tag-j">"JAMA Network Open"</li>
+          <li class="tag-j">"NEJM AI"</li>
+          <li class="tag-j">"J. Clinical Psychiatry"</li>
+          <li class="tag-j">"J. Clinical Psychopharmacology"</li>
+          <li class="tag-j">"Health Informatics Journal"</li>
+          <li class="tag-j">"Epidemiology &amp; Psychiatric Sciences"</li>
+          <li class="tag-j">"Frontiers in Psychiatry"</li>
+          <li class="tag-j">"J. Racial &amp; Ethnic Health Disparities"</li>
+          <li class="tag-j">"J. General Internal Medicine"</li>
+          <li class="tag-j">"Population Health, Equity &amp; Outcomes"</li>
+          <li class="tag-j">"J. Personality Disorders"</li>
+          <li class="tag-j">"Psychological Trauma"</li>
+          <li class="tag-j">"Am. J. Drug &amp; Alcohol Abuse"</li>
+          <li class="tag-j">"BMC Medical Education"</li>
+          <li class="tag-j">"Pacific Symposium on Biocomputing"</li>
+        </ul>
+        <span class="bracket" aria-hidden="true">]</span>
       </div>
     </div>
 
