@@ -4,27 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>John Lyon Havlik - Computational Psychiatry &amp; Machine Learning</title>
-<meta name="description" content="Stanford psychiatry resident (MD, MBA) building and validating machine-learning models that identify people with psychiatric and substance use disorders, including untreated cases.">
+<title>John Lyon Havlik — Applying AI to Improve Psychiatry</title>
+<meta name="description" content="Stanford physician-scientist (MD, MBA) building AI to identify psychiatric and substance use disorders earlier — and evaluating whether the systems receiving them, from health plans to mental-health chatbots, respond safely.">
 <meta name="author" content="John Lyon Havlik">
 <link rel="canonical" href="https://jlhavlik1.github.io/">
 <meta name="theme-color" content="#0d1017">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="profile">
-<meta property="og:title" content="John Lyon Havlik - Computational Psychiatry &amp; Machine Learning">
-<meta property="og:description" content="Stanford psychiatry resident (MD, MBA). Machine learning for psychiatric and substance-use detection, psychiatric services research, and health policy - first-author work in Nature Mental Health, JAMA, and Science Advances.">
+<meta property="og:title" content="John Lyon Havlik — Applying AI to Improve Psychiatry">
+<meta property="og:description" content="Stanford physician-scientist (MD, MBA). I build AI to detect psychiatric and substance use disorders earlier and evaluate whether health systems and mental-health chatbots respond safely. First-author work in Nature Mental Health, JAMA, and Science Advances; co-author in Nature Medicine.">
 <meta property="og:url" content="https://jlhavlik1.github.io/">
 <meta property="og:image" content="https://jlhavlik1.github.io/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="John Lyon Havlik, MD, MBA - computational psychiatry and machine learning.">
+<meta property="og:image:alt" content="John Lyon Havlik, MD, MBA - building and evaluating AI for psychiatry and substance use disorders.">
 <meta property="profile:first_name" content="John">
 <meta property="profile:last_name" content="Havlik">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="John Lyon Havlik - Computational Psychiatry &amp; Machine Learning">
-<meta name="twitter:description" content="Stanford psychiatry resident (MD, MBA). Machine learning for psychiatric and substance-use detection, psychiatric services research, and health policy.">
-<meta name="twitter:image:alt" content="John Lyon Havlik, MD, MBA - computational psychiatry and machine learning.">
+<meta name="twitter:title" content="John Lyon Havlik — Applying AI to Improve Psychiatry">
+<meta name="twitter:description" content="Building AI to detect psychiatric and substance use disorders earlier — and evaluating whether the systems receiving them respond safely. Stanford physician-scientist (MD, MBA).">
+<meta name="twitter:image:alt" content="John Lyon Havlik, MD, MBA - building and evaluating AI for psychiatry and substance use disorders.">
 <meta name="twitter:image" content="https://jlhavlik1.github.io/assets/og.png">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -134,6 +134,7 @@
   .lede{font:400 14px/1.75 var(--sans); color:var(--body); max-width:74ch; display:flex; flex-direction:column; gap:11px;}
   .lede a{color:var(--blue);}
   .lede a:hover{text-decoration:underline;}
+  .lede .prod{color:var(--green); font-weight:600;}
   .links{display:flex; gap:20px; margin-top:22px; flex-wrap:wrap; font:500 12.5px var(--mono);}
   .links a{color:var(--blue);}
   .links a.dl{color:var(--green);}
@@ -197,6 +198,7 @@
   .prow .pt{color:#cfd6e0;} .prow .pv{color:var(--dim);}
   .star{color:var(--orange);}
   .inpress{font:600 9px var(--mono); letter-spacing:.06em; text-transform:uppercase; color:var(--orange); border:1px solid rgba(246,178,107,.4); border-radius:4px; padding:1px 5px; margin-left:6px; white-space:nowrap;}
+  .coauth{font:600 9px var(--mono); letter-spacing:.06em; text-transform:uppercase; color:var(--blue); border:1px solid rgba(110,168,254,.4); border-radius:4px; padding:1px 5px; margin-left:6px; white-space:nowrap;}
 
   /* ---- disclosure button (details/summary) ---- */
   details{margin-bottom:26px;}
@@ -290,12 +292,13 @@
   "email":"jhavlik@stanford.edu",
   "image":"https://jlhavlik1.github.io/assets/headshot.jpg",
   "jobTitle":"Psychiatry Resident",
+  "description":"Physician-scientist building AI to identify psychiatric and substance use disorders earlier, and evaluating whether health systems and mental-health chatbots respond safely.",
   "worksFor":{"@type":"Organization","name":"Stanford University School of Medicine"},
   "alumniOf":[
     {"@type":"CollegeOrUniversity","name":"Yale University"},
     {"@type":"CollegeOrUniversity","name":"University of Chicago"}
   ],
-  "knowsAbout":["Machine learning","Psychiatry","Substance use disorders","Health services research","Health policy"],
+  "knowsAbout":["Artificial intelligence","Machine learning","Psychiatry","Substance use disorders","Generative AI safety","Health services research","Health policy"],
   "sameAs":["https://github.com/jlhavlik1","https://www.linkedin.com/in/john-havlik-md-mba-868683107/"]
 }
 </script>
@@ -335,15 +338,16 @@
                  alt="Portrait of John Lyon Havlik" fetchpriority="high">
           </picture>
           <div>
-            <div class="eyebrow">Computational psychiatry · machine learning · health policy</div>
+            <div class="eyebrow">Applying AI to improve psychiatry</div>
             <h1 class="name">John Lyon Havlik</h1>
             <div class="sub">MD · MBA · Stanford Psychiatry</div>
           </div>
         </div>
         <div class="lede">
-          <p>Hello! I'm the inaugural resident in Stanford's Humanities and Social Medicine Research Track. My research program is focused on one task: moving psychiatric and substance use care from reactive (after substantive and sometimes irreparable harm has occurred) to proactive (stepping in to prevent such harms). I believe such interventions will one day be commonplace and prevent much suffering for humanity.</p>
-          <p>As part of this work I build and validate machine-learning models that identify people with psychiatric and substance use disorders, including untreated cases the mental health system misses. As technical lead and first author, I built a supervised model that detects substance use disorders from EHR-like data, currently in press at <a href="#work">Nature Mental Health</a>. Other work leveraging multimodal data streams has determined those who will develop opioid use disorder and predict imminent psychiatric emergency department presentations. I employ a pretty wide variety of deterministic and probabilistic modeling techniques including those that form the basis of modern transformer-based "chatbots".</p>
-          <p>Alongside the modeling, I write on psychiatric services and health policy - recent work has included publications in <a href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener">JAMA Health Forum</a> on private-equity residential treatment and <a href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener">JAMA Network Open</a> on the economics of telemedicine "house calls." The goal of this work is to move models out of publications and into clinical workflows. I also serve as an expert reviewer of AI-in-medicine trials for the <a href="https://commerce.utah.gov/ai/" target="_blank" rel="noopener">Utah Office of Artificial Intelligence Policy</a>. Before medicine, with Peggy Mason at UChicago, I found the human bystander effect in rats (<a href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener">Science Advances</a>).</p>
+          <p>Hello! I'm the inaugural resident in Stanford's Humanities and Social Medicine Research Track. Psychiatric and substance use disorders are usually caught only after substantial, sometimes irreparable, harm has already occurred. My work is about changing that: I build artificial intelligence models that identify people earlier, and I evaluate whether the systems that receive them — health plans, treatment facilities, and now generative AI chatbots — are equipped to respond appropriately. I believe this kind of early, well-supported intervention will one day be commonplace and prevent a great deal of human suffering.</p>
+          <p>On the building side, I'm technical lead and first author on a supervised model that detects substance use disorders from EHR-like data, currently in press at <a href="#work">Nature Mental Health</a>; related work uses multimodal data to flag who will go on to develop opioid use disorder and to predict imminent psychiatric emergency-department visits. I also co-authored a <a href="https://doi.org/10.1038/s41591-026-04539-8" target="_blank" rel="noopener">Nature Medicine</a> paper on how to rigorously test the true capabilities of medical AI. I work across a wide range of deterministic and probabilistic methods, including the transformer architectures behind modern "chatbots."</p>
+          <p><span class="prod">In production —</span> spinout AI-enabled clinical workflow automation software I developed is in use at the U.S. Department of Veterans Affairs and here at Stanford. The aim is always to move models out of publications and into the clinic.</p>
+          <p>On the evaluating side, I write on psychiatric services and health policy — recently in <a href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener">JAMA Health Forum</a> on private-equity residential treatment and <a href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener">JAMA Network Open</a> on the economics of telemedicine "house calls" — and I serve as an expert reviewer of AI-in-medicine trials for the <a href="https://commerce.utah.gov/ai/" target="_blank" rel="noopener">Utah Office of Artificial Intelligence Policy</a>. Alongside the research, I founded and lead Research Roundtable, a mentorship group whose undergraduates have published 10+ first-author papers. Before medicine, with Peggy Mason at UChicago, I found the human bystander effect in rats (<a href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener">Science Advances</a>).</p>
         </div>
         <nav class="links" aria-label="Contact and profiles">
           <a href="cv.pdf" class="dl">↓ cv.pdf</a>
@@ -354,11 +358,35 @@
       </div>
     </div>
 
-    <!-- In [2] : selected_work -->
+    <!-- In [2] : open_collaborations -->
+    <section class="cell" id="collaborate">
+      <h2 class="sr-only">Open collaborations</h2>
+      <div class="io">
+        <div class="lbl">In [2]:</div>
+        <div class="code"><span class="o">havlik</span>.<span class="f">open_collaborations</span>()  <span class="c"># what I'm looking for right now</span></div>
+      </div>
+    </section>
+    <div class="res">
+      <div class="work">
+        <div class="card">
+          <div class="venue"><span>Validation partners</span><span class="yr">open</span></div>
+          <div class="desc">External validation partners for my substance-use detection models — to test whether they hold up beyond the data they were trained on.</div>
+          <div class="tag">ideal: a health system already running OMOP (or comparable structured EHR data)</div>
+        </div>
+        <div class="card">
+          <div class="venue"><span>Safety-eval collaborators</span><span class="yr">open</span></div>
+          <div class="desc">Collaborators on safety evaluation for consumer mental-health AI — I'm building what will be the field's largest prospective evaluation of chatbot safety in mental-health crises.</div>
+          <div class="tag">ideal: researchers, clinicians, or platforms working on LLM safety in crisis care</div>
+        </div>
+      </div>
+      <div style="padding:4px 22px 18px; font:400 12.5px var(--mono); color:var(--dim2);">→ Working on either? <a href="mailto:jhavlik@stanford.edu" style="color:var(--green)">jhavlik@stanford.edu</a> — I'd like to hear from you.</div>
+    </div>
+
+    <!-- In [3] : selected_work -->
     <section class="cell" id="work">
       <h2 class="sr-only">Selected work</h2>
       <div class="io">
-        <div class="lbl">In [2]:</div>
+        <div class="lbl">In [3]:</div>
         <div class="code"><span class="o">havlik</span>.<span class="f">selected_work</span>()  <span class="c"># first-author work I am proud of</span></div>
       </div>
     </section>
@@ -387,11 +415,11 @@
       </div>
     </div>
 
-    <!-- In [3] : education -->
+    <!-- In [4] : education -->
     <section class="cell">
       <h2 class="sr-only">Education</h2>
       <div class="io">
-        <div class="lbl">In [3]:</div>
+        <div class="lbl">In [4]:</div>
         <div class="code"><span class="o">havlik</span>.education  <span class="c"># both coasts and in between</span></div>
       </div>
     </section>
@@ -404,11 +432,11 @@
       </div>
     </div>
 
-    <!-- In [4] : timeline -->
+    <!-- In [5] : timeline -->
     <section class="cell">
       <h2 class="sr-only">Timeline</h2>
       <div class="io">
-        <div class="lbl">In [4]:</div>
+        <div class="lbl">In [5]:</div>
         <div class="code"><span class="o">havlik</span>.<span class="f">timeline</span>()  <span class="c"># 2015 to 2026</span></div>
       </div>
     </section>
@@ -438,17 +466,17 @@
       </div>
     </div>
 
-    <!-- In [5] : publications by year -->
+    <!-- In [6] : publications by year -->
     <section class="cell">
       <h2 class="sr-only">Publications by year</h2>
       <div class="io">
-        <div class="lbl">In [5]:</div>
+        <div class="lbl">In [6]:</div>
         <div class="code"><span class="o">havlik</span>.publications.<span class="f">groupby</span>(<span class="s">"year"</span>).<span class="f">size</span>()</div>
       </div>
     </section>
     <div class="res">
       <div class="pad22">
-        <div class="muted" style="margin-bottom:14px;"># 45 records · 43 peer-reviewed + 2 invited commentary · dtype: int64</div>
+        <div class="muted" style="margin-bottom:14px;"># 47 records · 45 peer-reviewed + 2 invited commentary · dtype: int64</div>
         <div class="yrbars">
           <div class="yb"><span class="yl">2020</span><div class="bar-t"><div class="bar-f" style="width:11.11%;animation-delay:.30s"></div></div><span class="yv">1</span></div>
           <div class="yb"><span class="yl">2021</span><div class="bar-t"><div class="bar-f" style="width:100%;animation-delay:.40s"></div></div><span class="yv">9</span></div>
@@ -456,93 +484,96 @@
           <div class="yb"><span class="yl">2023</span><div class="bar-t"><div class="bar-f" style="width:44.44%;animation-delay:.60s"></div></div><span class="yv">4</span></div>
           <div class="yb"><span class="yl">2024</span><div class="bar-t"><div class="bar-f" style="width:100%;animation-delay:.70s"></div></div><span class="yv">9</span></div>
           <div class="yb"><span class="yl">2025</span><div class="bar-t"><div class="bar-f" style="width:77.78%;animation-delay:.80s"></div></div><span class="yv">7</span></div>
-          <div class="yb"><span class="yl">2026</span><div class="bar-t"><div class="bar-f" style="width:66.67%;animation-delay:.90s"></div></div><span class="yv">6</span></div>
+          <div class="yb"><span class="yl">2026</span><div class="bar-t"><div class="bar-f" style="width:88.89%;animation-delay:.90s"></div></div><span class="yv">8</span></div>
         </div>
       </div>
     </div>
 
-    <!-- In [6] : publications.head -->
+    <!-- In [7] : publications.head -->
     <section class="cell">
       <h2 class="sr-only">Publications</h2>
       <div class="io">
-        <div class="lbl">In [6]:</div>
-        <div class="code"><span class="o">havlik</span>.publications.<span class="f">query</span>(<span class="s">"flagship"</span>).<span class="f">head</span>(<span class="n">12</span>)</div>
+        <div class="lbl">In [7]:</div>
+        <div class="code"><span class="o">havlik</span>.publications.<span class="f">query</span>(<span class="s">"flagship"</span>).<span class="f">head</span>(<span class="n">13</span>)</div>
       </div>
     </section>
     <div class="res tight">
       <div class="pad">
-        <div class="muted" style="margin-bottom:12px;"># n = 45 · showing 12 · ★ = flagship venue AND first author</div>
+        <div class="muted" style="margin-bottom:12px;"># n = 47 · showing 13 · ★ = flagship venue AND first author</div>
         <div class="phead"><span></span><span>year</span><span>title · venue</span></div>
         <div class="prow"><span class="pi">0</span><span class="py">2026</span><span><span class="pt">Supervised ML identifies people with untreated substance use disorders from EHR-like data</span> <span class="pv">· Nature Mental Health</span> <span class="star">★</span><span class="inpress">in press</span></span></div>
-        <a class="prow" href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener"><span class="pi">1</span><span class="py">2026</span><span><span class="pt">Private Equity–Acquired Residential Treatment Facilities vs Other For-Profit Facilities</span> <span class="pv">· JAMA Health Forum</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener"><span class="pi">2</span><span class="py">2026</span><span><span class="pt">Costs and Outcomes in Telemedicine: Can "House Calls" Make Sense and Cents?</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1176/appi.ps.20250210" target="_blank" rel="noopener"><span class="pi">3</span><span class="py">2026</span><span><span class="pt">Research Support for U.S. Psychiatrists From Pharmaceutical and Medical Device Companies</span> <span class="pv">· Psychiatric Services</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s40596-025-02186-8" target="_blank" rel="noopener"><span class="pi">4</span><span class="py">2025</span><span><span class="pt">Who Leads Psychiatry? Demographics, Educations, and Scientific Contributions of US Academic Chairs</span> <span class="pv">· Academic Psychiatry</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.8558" target="_blank" rel="noopener"><span class="pi">5</span><span class="py">2025</span><span><span class="pt">Medicaid Costs and Outcomes for Patients Treated in an Outpatient Telepsychiatry Clinic</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2024.58160" target="_blank" rel="noopener"><span class="pi">6</span><span class="py">2025</span><span><span class="pt">Trends in Psychiatrist-Led Care for Medicare Part B Enrollees</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1371/journal.pone.0302544" target="_blank" rel="noopener"><span class="pi">7</span><span class="py">2024</span><span><span class="pt">Mental-Health Quality of Life and Treatment Seeking for Substance Use Disorders</span> <span class="pv">· PLoS ONE</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2023.11250" target="_blank" rel="noopener"><span class="pi">8</span><span class="py">2023</span><span><span class="pt">Characteristics of Esketamine Prescribers Among Medicare Beneficiaries, 2019–2020</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1080/00952990.2023.2245125" target="_blank" rel="noopener"><span class="pi">9</span><span class="py">2023</span><span><span class="pt">Quality of Life Among Individuals With Treated, Untreated, and Past Alcohol Use Disorder</span> <span class="pv">· Am. J. Drug &amp; Alcohol Abuse</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1002/hast.1351" target="_blank" rel="noopener"><span class="pi">10</span><span class="py">2022</span><span><span class="pt">The Case for Ethical Efficiency: A System That Has Run Out of Time</span> <span class="pv">· Hastings Center Report</span> <span class="star">★</span></span></a>
-        <a class="prow" href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener"><span class="pi">11</span><span class="py">2020</span><span><span class="pt">The Bystander Effect in Rats</span> <span class="pv">· Science Advances</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1038/s41591-026-04539-8" target="_blank" rel="noopener"><span class="pi">1</span><span class="py">2026</span><span><span class="pt">Toward a Test of Medical AI Superintelligence</span> <span class="pv">· Nature Medicine</span> <span class="coauth">co-author</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener"><span class="pi">2</span><span class="py">2026</span><span><span class="pt">Private Equity–Acquired Residential Treatment Facilities vs Other For-Profit Facilities</span> <span class="pv">· JAMA Health Forum</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener"><span class="pi">3</span><span class="py">2026</span><span><span class="pt">Costs and Outcomes in Telemedicine: Can "House Calls" Make Sense and Cents?</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1176/appi.ps.20250210" target="_blank" rel="noopener"><span class="pi">4</span><span class="py">2026</span><span><span class="pt">Research Support for U.S. Psychiatrists From Pharmaceutical and Medical Device Companies</span> <span class="pv">· Psychiatric Services</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s40596-025-02186-8" target="_blank" rel="noopener"><span class="pi">5</span><span class="py">2025</span><span><span class="pt">Who Leads Psychiatry? Demographics, Educations, and Scientific Contributions of US Academic Chairs</span> <span class="pv">· Academic Psychiatry</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.8558" target="_blank" rel="noopener"><span class="pi">6</span><span class="py">2025</span><span><span class="pt">Medicaid Costs and Outcomes for Patients Treated in an Outpatient Telepsychiatry Clinic</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2024.58160" target="_blank" rel="noopener"><span class="pi">7</span><span class="py">2025</span><span><span class="pt">Trends in Psychiatrist-Led Care for Medicare Part B Enrollees</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1371/journal.pone.0302544" target="_blank" rel="noopener"><span class="pi">8</span><span class="py">2024</span><span><span class="pt">Mental-Health Quality of Life and Treatment Seeking for Substance Use Disorders</span> <span class="pv">· PLoS ONE</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2023.11250" target="_blank" rel="noopener"><span class="pi">9</span><span class="py">2023</span><span><span class="pt">Characteristics of Esketamine Prescribers Among Medicare Beneficiaries, 2019–2020</span> <span class="pv">· JAMA Network Open</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1080/00952990.2023.2245125" target="_blank" rel="noopener"><span class="pi">10</span><span class="py">2023</span><span><span class="pt">Quality of Life Among Individuals With Treated, Untreated, and Past Alcohol Use Disorder</span> <span class="pv">· Am. J. Drug &amp; Alcohol Abuse</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1002/hast.1351" target="_blank" rel="noopener"><span class="pi">11</span><span class="py">2022</span><span><span class="pt">The Case for Ethical Efficiency: A System That Has Run Out of Time</span> <span class="pv">· Hastings Center Report</span> <span class="star">★</span></span></a>
+        <a class="prow" href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener"><span class="pi">12</span><span class="py">2020</span><span><span class="pt">The Bystander Effect in Rats</span> <span class="pv">· Science Advances</span> <span class="star">★</span></span></a>
       </div>
     </div>
     <details>
       <summary>havlik.publications[ : ]   ▸ run</summary>
       <div class="allbox">
         <div class="prow"><span class="pi">0</span><span class="py">2026</span><span><span class="pt">Supervised ML identifies people with untreated substance use disorders from EHR-like data</span> <span class="pv">· Nature Mental Health</span> <span class="inpress">in press</span></span></div>
-        <a class="prow" href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener"><span class="pi">1</span><span class="py">2026</span><span><span class="pt">Private Equity–Acquired Residential Treatment Facilities vs Other For-Profit Facilities</span> <span class="pv">· JAMA Health Forum</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener"><span class="pi">2</span><span class="py">2026</span><span><span class="pt">Costs and Outcomes in Telemedicine: Can "House Calls" Make Sense and Cents?</span> <span class="pv">· JAMA Network Open</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s40596-026-02305-z" target="_blank" rel="noopener"><span class="pi">3</span><span class="py">2026</span><span><span class="pt">Engines of Progress: Research Track Residencies in Psychiatry</span> <span class="pv">· Academic Psychiatry</span></span></a>
-        <a class="prow" href="https://doi.org/10.4088/jcp.25m16063" target="_blank" rel="noopener"><span class="pi">4</span><span class="py">2026</span><span><span class="pt">Innovation in Psychiatric Drug Development: FDA-Approved Drugs, 2012–2024</span> <span class="pv">· J. Clinical Psychiatry</span></span></a>
-        <a class="prow" href="https://doi.org/10.1176/appi.ps.20250210" target="_blank" rel="noopener"><span class="pi">5</span><span class="py">2026</span><span><span class="pt">Research Support for U.S. Psychiatrists From Pharmaceutical and Medical Device Companies, 2015–2022</span> <span class="pv">· Psychiatric Services</span></span></a>
-        <a class="prow" href="https://doi.org/10.1097/ACM.0000000000006276" target="_blank" rel="noopener"><span class="pi">6</span><span class="py">2025</span><span><span class="pt">Futures Found: The 2025 Trainee Letters to the Editor</span> <span class="pv">· Academic Medicine</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.genhosppsych.2025.10.015" target="_blank" rel="noopener"><span class="pi">7</span><span class="py">2025</span><span><span class="pt">Are Observation Codes Underused for Emergency Psychiatric Patients With an Extended Length of Stay?</span> <span class="pv">· General Hospital Psychiatry</span></span></a>
-        <a class="prow" href="https://doi.org/10.1097/JCP.0000000000002095" target="_blank" rel="noopener"><span class="pi">8</span><span class="py">2025</span><span><span class="pt">Characteristics of Ongoing Clinical Trials of Psychogenic Substances for Psychiatric Disorders</span> <span class="pv">· J. Clinical Psychopharmacology</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s40596-025-02186-8" target="_blank" rel="noopener"><span class="pi">9</span><span class="py">2025</span><span><span class="pt">Who Leads Psychiatry? Demographics, Educations, and Scientific Contributions of US Academic Chairs</span> <span class="pv">· Academic Psychiatry</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.8558" target="_blank" rel="noopener"><span class="pi">10</span><span class="py">2025</span><span><span class="pt">Medicaid Costs and Outcomes for Patients Treated in an Outpatient Telepsychiatry Clinic</span> <span class="pv">· JAMA Network Open</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2024.58160" target="_blank" rel="noopener"><span class="pi">11</span><span class="py">2025</span><span><span class="pt">Trends in Psychiatrist-Led Care for Medicare Part B Enrollees</span> <span class="pv">· JAMA Network Open</span></span></a>
-        <a class="prow" href="https://doi.org/10.1037/tra0001846" target="_blank" rel="noopener"><span class="pi">12</span><span class="py">2025</span><span><span class="pt">Correlates of Impaired Sleep Duration Among Adults With Trauma Alone and With PTSD</span> <span class="pv">· Psychological Trauma</span></span></a>
-        <a class="prow" href="https://psychiatryonline.org/doi/10.1176/appi.ps.20240218" target="_blank" rel="noopener"><span class="pi">13</span><span class="py">2024</span><span><span class="pt">National Trends in and Concentration of Industry Payments to U.S. Psychiatrists, 2015–2021</span> <span class="pv">· Psychiatric Services</span></span></a>
-        <a class="prow" href="https://www.psychiatrist.com/jcp/quantifying-suffering-with-quality-adjusted-life-years-social-anxiety-disorder/" target="_blank" rel="noopener"><span class="pi">14</span><span class="py">2024</span><span><span class="pt">How to Value a Life Without Limits: QALYs in Social Anxiety Disorder</span> <span class="pv">· J. Clinical Psychiatry</span></span></a>
-        <a class="prow" href="https://doi.org/10.1371/journal.pone.0302544" target="_blank" rel="noopener"><span class="pi">15</span><span class="py">2024</span><span><span class="pt">Mental-Health Quality of Life and Treatment Seeking for Substance Use Disorders</span> <span class="pv">· PLoS ONE</span></span></a>
-        <a class="prow" href="https://doi.org/10.3390/jcm13061542" target="_blank" rel="noopener"><span class="pi">16</span><span class="py">2024</span><span><span class="pt">Association of Malnutrition With Outcomes After Spine Surgery for Spinal Metastases</span> <span class="pv">· J. Clinical Medicine</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s11606-024-08731-9" target="_blank" rel="noopener"><span class="pi">17</span><span class="py">2024</span><span><span class="pt">Mobile Medical Units for Populations Experiencing Homelessness: A Scoping Review</span> <span class="pv">· J. General Internal Medicine</span></span></a>
-        <a class="prow" href="https://doi.org/10.7759/cureus.54762" target="_blank" rel="noopener"><span class="pi">18</span><span class="py">2024</span><span><span class="pt">The Top 50 Articles and Authors of the New Millennium in Psychiatry</span> <span class="pv">· Cureus</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s11920-024-01494-4" target="_blank" rel="noopener"><span class="pi">19</span><span class="py">2024</span><span><span class="pt">Recent Advances in the Treatment of Treatment-Resistant Depression, 2018–2023</span> <span class="pv">· Current Psychiatry Reports</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s40615-024-01944-y" target="_blank" rel="noopener"><span class="pi">20</span><span class="py">2024</span><span><span class="pt">"Black Is Not Monolithic": Complexities in COVID-19 Vaccine Decision-Making</span> <span class="pv">· J. Racial &amp; Ethnic Health Disparities</span></span></a>
-        <a class="prow" href="https://doi.org/10.1136/bmjopen-2023-081252" target="_blank" rel="noopener"><span class="pi">21</span><span class="py">2024</span><span><span class="pt">Comparison of Industry Payments to Psychiatrists and Psychiatric APCs, 2021</span> <span class="pv">· BMJ Open</span></span></a>
-        <a class="prow" href="https://doi.org/10.1080/00952990.2023.2245125" target="_blank" rel="noopener"><span class="pi">22</span><span class="py">2023</span><span><span class="pt">Quality of Life Among Individuals With Treated, Untreated, and Past Alcohol Use Disorder</span> <span class="pv">· Am. J. Drug &amp; Alcohol Abuse</span></span></a>
-        <a class="prow" href="https://doi.org/10.1176/appi.ps.20230040" target="_blank" rel="noopener"><span class="pi">23</span><span class="py">2023</span><span><span class="pt">Distribution of CARES Act Provider Relief Fund Assistance to Psychiatric Care Organizations</span> <span class="pv">· Psychiatric Services</span></span></a>
-        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2023.11250" target="_blank" rel="noopener"><span class="pi">24</span><span class="py">2023</span><span><span class="pt">Characteristics of Esketamine Prescribers Among Medicare Beneficiaries, 2019–2020</span> <span class="pv">· JAMA Network Open</span></span></a>
-        <a class="prow" href="https://doi.org/10.14444/8448" target="_blank" rel="noopener"><span class="pi">25</span><span class="py">2023</span><span><span class="pt">IV-to-Oral Opioid Transition Time and Length of Stay After Spinal Fusion for AIS</span> <span class="pv">· Intl J. Spine Surgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s11606-022-07970-y" target="_blank" rel="noopener"><span class="pi">26</span><span class="py">2022</span><span><span class="pt">Primary Care for Veterans Experiencing Homelessness: HPACT Model Review</span> <span class="pv">· J. General Internal Medicine</span></span></a>
-        <a class="prow" href="https://doi.org/10.1007/s43390-022-00609-2" target="_blank" rel="noopener"><span class="pi">27</span><span class="py">2022</span><span><span class="pt">Inpatient Opioid Consumption and Outcomes After Spinal Fusion for Adult Spine Deformity</span> <span class="pv">· Spine Deformity</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.08.037" target="_blank" rel="noopener"><span class="pi">28</span><span class="py">2022</span><span><span class="pt">Hospital Frailty Risk Score Predicts Adverse Events After Ventriculoperitoneal Shunt Surgery</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.05.101" target="_blank" rel="noopener"><span class="pi">29</span><span class="py">2022</span><span><span class="pt">Frailty Indices and Charlson Comorbidity Index in Spine Metastasis Surgery</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1002/hast.1351" target="_blank" rel="noopener"><span class="pi">30</span><span class="py">2022</span><span><span class="pt">The Case for Ethical Efficiency: A System That Has Run Out of Time</span> <span class="pv">· Hastings Center Report</span></span></a>
-        <a class="prow" href="https://doi.org/10.1136/neurintsurg-2021-018484" target="_blank" rel="noopener"><span class="pi">31</span><span class="py">2022</span><span><span class="pt">Hospital Frailty Risk Score and Complications After Endovascular Treatment of Ruptured Aneurysms</span> <span class="pv">· J. NeuroInterventional Surgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.02.122" target="_blank" rel="noopener"><span class="pi">32</span><span class="py">2022</span><span><span class="pt">Impact of Frailty After Surgical Evacuation of Acute Traumatic Subdural Hematoma</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.01.112" target="_blank" rel="noopener"><span class="pi">33</span><span class="py">2022</span><span><span class="pt">Resource Utilization After Surgery for Metastatic Spinal Tumors With Affective Disorder</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1177/21925682211069937" target="_blank" rel="noopener"><span class="pi">34</span><span class="py">2022</span><span><span class="pt">Frailty Risk Score and Resource Utilization After Surgery for Spinal Intradural/Cord Tumors</span> <span class="pv">· Global Spine Journal</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.clineuro.2021.107017" target="_blank" rel="noopener"><span class="pi">35</span><span class="py">2021</span><span><span class="pt">Preoperative Nutritional Status and Outcomes After Lumbar Decompression and Fusion</span> <span class="pv">· Clinical Neurology &amp; Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/J.CLINEURO.2021.106902" target="_blank" rel="noopener"><span class="pi">36</span><span class="py">2021</span><span><span class="pt">Risk Factors for Non-Routine Discharge After Lumbar Decompression and Fusion</span> <span class="pv">· Clinical Neurology &amp; Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/J.WNEU.2021.06.130" target="_blank" rel="noopener"><span class="pi">37</span><span class="py">2021</span><span><span class="pt">Impact of Frailty in Adults With Acute Traumatic Cervical Spinal Cord Injury</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2021.09.047" target="_blank" rel="noopener"><span class="pi">38</span><span class="py">2021</span><span><span class="pt">Racial Disparities in Resource Utilization After Pediatric Cervical/Thoracic Spinal Injuries</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1097/AS9.0000000000000077" target="_blank" rel="noopener"><span class="pi">39</span><span class="py">2021</span><span><span class="pt">Lessons From COVID-19: The Case for Virtual Residency Interviews</span> <span class="pv">· Annals of Surgery Open</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.spinee.2021.05.011" target="_blank" rel="noopener"><span class="pi">40</span><span class="py">2021</span><span><span class="pt">Modified-Frailty Index Does Not Independently Predict Complications After Lumbar Fusion</span> <span class="pv">· The Spine Journal</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2021.01.109" target="_blank" rel="noopener"><span class="pi">41</span><span class="py">2021</span><span><span class="pt">Pulmonary Risk Factors and Hospital Resource Use After Spinal Fusion for AIS</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2020.10.074" target="_blank" rel="noopener"><span class="pi">42</span><span class="py">2021</span><span><span class="pt">Impact of Preoperative Anemia on Outcomes After Posterior Spinal Fusion for AIS</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1016/j.wneu.2020.09.137" target="_blank" rel="noopener"><span class="pi">43</span><span class="py">2021</span><span><span class="pt">Characteristics of Reported Industry Payments to Neurosurgeons: A 5-Year Study</span> <span class="pv">· World Neurosurgery</span></span></a>
-        <a class="prow" href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener"><span class="pi">44</span><span class="py">2020</span><span><span class="pt">The Bystander Effect in Rats</span> <span class="pv">· Science Advances</span></span></a>
+        <a class="prow" href="https://doi.org/10.1038/s41591-026-04539-8" target="_blank" rel="noopener"><span class="pi">1</span><span class="py">2026</span><span><span class="pt">Toward a Test of Medical AI Superintelligence</span> <span class="pv">· Nature Medicine</span> <span class="coauth">co-author</span></span></a>
+        <a class="prow" href="https://doi.org/10.1093/acamed/wvag128" target="_blank" rel="noopener"><span class="pi">2</span><span class="py">2026</span><span><span class="pt">Upward Trend of Publications With Student and Trainee Authors, 2016–2025</span> <span class="pv">· Academic Medicine</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamahealthforum.2026.0414" target="_blank" rel="noopener"><span class="pi">3</span><span class="py">2026</span><span><span class="pt">Private Equity–Acquired Residential Treatment Facilities vs Other For-Profit Facilities</span> <span class="pv">· JAMA Health Forum</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.56111" target="_blank" rel="noopener"><span class="pi">4</span><span class="py">2026</span><span><span class="pt">Costs and Outcomes in Telemedicine: Can "House Calls" Make Sense and Cents?</span> <span class="pv">· JAMA Network Open</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s40596-026-02305-z" target="_blank" rel="noopener"><span class="pi">5</span><span class="py">2026</span><span><span class="pt">Engines of Progress: Research Track Residencies in Psychiatry</span> <span class="pv">· Academic Psychiatry</span></span></a>
+        <a class="prow" href="https://doi.org/10.4088/jcp.25m16063" target="_blank" rel="noopener"><span class="pi">6</span><span class="py">2026</span><span><span class="pt">Innovation in Psychiatric Drug Development: FDA-Approved Drugs, 2012–2024</span> <span class="pv">· J. Clinical Psychiatry</span></span></a>
+        <a class="prow" href="https://doi.org/10.1176/appi.ps.20250210" target="_blank" rel="noopener"><span class="pi">7</span><span class="py">2026</span><span><span class="pt">Research Support for U.S. Psychiatrists From Pharmaceutical and Medical Device Companies, 2015–2022</span> <span class="pv">· Psychiatric Services</span></span></a>
+        <a class="prow" href="https://doi.org/10.1097/ACM.0000000000006276" target="_blank" rel="noopener"><span class="pi">8</span><span class="py">2025</span><span><span class="pt">Futures Found: The 2025 Trainee Letters to the Editor</span> <span class="pv">· Academic Medicine</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.genhosppsych.2025.10.015" target="_blank" rel="noopener"><span class="pi">9</span><span class="py">2025</span><span><span class="pt">Are Observation Codes Underused for Emergency Psychiatric Patients With an Extended Length of Stay?</span> <span class="pv">· General Hospital Psychiatry</span></span></a>
+        <a class="prow" href="https://doi.org/10.1097/JCP.0000000000002095" target="_blank" rel="noopener"><span class="pi">10</span><span class="py">2025</span><span><span class="pt">Characteristics of Ongoing Clinical Trials of Psychogenic Substances for Psychiatric Disorders</span> <span class="pv">· J. Clinical Psychopharmacology</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s40596-025-02186-8" target="_blank" rel="noopener"><span class="pi">11</span><span class="py">2025</span><span><span class="pt">Who Leads Psychiatry? Demographics, Educations, and Scientific Contributions of US Academic Chairs</span> <span class="pv">· Academic Psychiatry</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2025.8558" target="_blank" rel="noopener"><span class="pi">12</span><span class="py">2025</span><span><span class="pt">Medicaid Costs and Outcomes for Patients Treated in an Outpatient Telepsychiatry Clinic</span> <span class="pv">· JAMA Network Open</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2024.58160" target="_blank" rel="noopener"><span class="pi">13</span><span class="py">2025</span><span><span class="pt">Trends in Psychiatrist-Led Care for Medicare Part B Enrollees</span> <span class="pv">· JAMA Network Open</span></span></a>
+        <a class="prow" href="https://doi.org/10.1037/tra0001846" target="_blank" rel="noopener"><span class="pi">14</span><span class="py">2025</span><span><span class="pt">Correlates of Impaired Sleep Duration Among Adults With Trauma Alone and With PTSD</span> <span class="pv">· Psychological Trauma</span></span></a>
+        <a class="prow" href="https://psychiatryonline.org/doi/10.1176/appi.ps.20240218" target="_blank" rel="noopener"><span class="pi">15</span><span class="py">2024</span><span><span class="pt">National Trends in and Concentration of Industry Payments to U.S. Psychiatrists, 2015–2021</span> <span class="pv">· Psychiatric Services</span></span></a>
+        <a class="prow" href="https://www.psychiatrist.com/jcp/quantifying-suffering-with-quality-adjusted-life-years-social-anxiety-disorder/" target="_blank" rel="noopener"><span class="pi">16</span><span class="py">2024</span><span><span class="pt">How to Value a Life Without Limits: QALYs in Social Anxiety Disorder</span> <span class="pv">· J. Clinical Psychiatry</span></span></a>
+        <a class="prow" href="https://doi.org/10.1371/journal.pone.0302544" target="_blank" rel="noopener"><span class="pi">17</span><span class="py">2024</span><span><span class="pt">Mental-Health Quality of Life and Treatment Seeking for Substance Use Disorders</span> <span class="pv">· PLoS ONE</span></span></a>
+        <a class="prow" href="https://doi.org/10.3390/jcm13061542" target="_blank" rel="noopener"><span class="pi">18</span><span class="py">2024</span><span><span class="pt">Association of Malnutrition With Outcomes After Spine Surgery for Spinal Metastases</span> <span class="pv">· J. Clinical Medicine</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s11606-024-08731-9" target="_blank" rel="noopener"><span class="pi">19</span><span class="py">2024</span><span><span class="pt">Mobile Medical Units for Populations Experiencing Homelessness: A Scoping Review</span> <span class="pv">· J. General Internal Medicine</span></span></a>
+        <a class="prow" href="https://doi.org/10.7759/cureus.54762" target="_blank" rel="noopener"><span class="pi">20</span><span class="py">2024</span><span><span class="pt">The Top 50 Articles and Authors of the New Millennium in Psychiatry</span> <span class="pv">· Cureus</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s11920-024-01494-4" target="_blank" rel="noopener"><span class="pi">21</span><span class="py">2024</span><span><span class="pt">Recent Advances in the Treatment of Treatment-Resistant Depression, 2018–2023</span> <span class="pv">· Current Psychiatry Reports</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s40615-024-01944-y" target="_blank" rel="noopener"><span class="pi">22</span><span class="py">2024</span><span><span class="pt">"Black Is Not Monolithic": Complexities in COVID-19 Vaccine Decision-Making</span> <span class="pv">· J. Racial &amp; Ethnic Health Disparities</span></span></a>
+        <a class="prow" href="https://doi.org/10.1136/bmjopen-2023-081252" target="_blank" rel="noopener"><span class="pi">23</span><span class="py">2024</span><span><span class="pt">Comparison of Industry Payments to Psychiatrists and Psychiatric APCs, 2021</span> <span class="pv">· BMJ Open</span></span></a>
+        <a class="prow" href="https://doi.org/10.1080/00952990.2023.2245125" target="_blank" rel="noopener"><span class="pi">24</span><span class="py">2023</span><span><span class="pt">Quality of Life Among Individuals With Treated, Untreated, and Past Alcohol Use Disorder</span> <span class="pv">· Am. J. Drug &amp; Alcohol Abuse</span></span></a>
+        <a class="prow" href="https://doi.org/10.1176/appi.ps.20230040" target="_blank" rel="noopener"><span class="pi">25</span><span class="py">2023</span><span><span class="pt">Distribution of CARES Act Provider Relief Fund Assistance to Psychiatric Care Organizations</span> <span class="pv">· Psychiatric Services</span></span></a>
+        <a class="prow" href="https://doi.org/10.1001/jamanetworkopen.2023.11250" target="_blank" rel="noopener"><span class="pi">26</span><span class="py">2023</span><span><span class="pt">Characteristics of Esketamine Prescribers Among Medicare Beneficiaries, 2019–2020</span> <span class="pv">· JAMA Network Open</span></span></a>
+        <a class="prow" href="https://doi.org/10.14444/8448" target="_blank" rel="noopener"><span class="pi">27</span><span class="py">2023</span><span><span class="pt">IV-to-Oral Opioid Transition Time and Length of Stay After Spinal Fusion for AIS</span> <span class="pv">· Intl J. Spine Surgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s11606-022-07970-y" target="_blank" rel="noopener"><span class="pi">28</span><span class="py">2022</span><span><span class="pt">Primary Care for Veterans Experiencing Homelessness: HPACT Model Review</span> <span class="pv">· J. General Internal Medicine</span></span></a>
+        <a class="prow" href="https://doi.org/10.1007/s43390-022-00609-2" target="_blank" rel="noopener"><span class="pi">29</span><span class="py">2022</span><span><span class="pt">Inpatient Opioid Consumption and Outcomes After Spinal Fusion for Adult Spine Deformity</span> <span class="pv">· Spine Deformity</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.08.037" target="_blank" rel="noopener"><span class="pi">30</span><span class="py">2022</span><span><span class="pt">Hospital Frailty Risk Score Predicts Adverse Events After Ventriculoperitoneal Shunt Surgery</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.05.101" target="_blank" rel="noopener"><span class="pi">31</span><span class="py">2022</span><span><span class="pt">Frailty Indices and Charlson Comorbidity Index in Spine Metastasis Surgery</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1002/hast.1351" target="_blank" rel="noopener"><span class="pi">32</span><span class="py">2022</span><span><span class="pt">The Case for Ethical Efficiency: A System That Has Run Out of Time</span> <span class="pv">· Hastings Center Report</span></span></a>
+        <a class="prow" href="https://doi.org/10.1136/neurintsurg-2021-018484" target="_blank" rel="noopener"><span class="pi">33</span><span class="py">2022</span><span><span class="pt">Hospital Frailty Risk Score and Complications After Endovascular Treatment of Ruptured Aneurysms</span> <span class="pv">· J. NeuroInterventional Surgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.02.122" target="_blank" rel="noopener"><span class="pi">34</span><span class="py">2022</span><span><span class="pt">Impact of Frailty After Surgical Evacuation of Acute Traumatic Subdural Hematoma</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2022.01.112" target="_blank" rel="noopener"><span class="pi">35</span><span class="py">2022</span><span><span class="pt">Resource Utilization After Surgery for Metastatic Spinal Tumors With Affective Disorder</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1177/21925682211069937" target="_blank" rel="noopener"><span class="pi">36</span><span class="py">2022</span><span><span class="pt">Frailty Risk Score and Resource Utilization After Surgery for Spinal Intradural/Cord Tumors</span> <span class="pv">· Global Spine Journal</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.clineuro.2021.107017" target="_blank" rel="noopener"><span class="pi">37</span><span class="py">2021</span><span><span class="pt">Preoperative Nutritional Status and Outcomes After Lumbar Decompression and Fusion</span> <span class="pv">· Clinical Neurology &amp; Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/J.CLINEURO.2021.106902" target="_blank" rel="noopener"><span class="pi">38</span><span class="py">2021</span><span><span class="pt">Risk Factors for Non-Routine Discharge After Lumbar Decompression and Fusion</span> <span class="pv">· Clinical Neurology &amp; Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/J.WNEU.2021.06.130" target="_blank" rel="noopener"><span class="pi">39</span><span class="py">2021</span><span><span class="pt">Impact of Frailty in Adults With Acute Traumatic Cervical Spinal Cord Injury</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2021.09.047" target="_blank" rel="noopener"><span class="pi">40</span><span class="py">2021</span><span><span class="pt">Racial Disparities in Resource Utilization After Pediatric Cervical/Thoracic Spinal Injuries</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1097/AS9.0000000000000077" target="_blank" rel="noopener"><span class="pi">41</span><span class="py">2021</span><span><span class="pt">Lessons From COVID-19: The Case for Virtual Residency Interviews</span> <span class="pv">· Annals of Surgery Open</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.spinee.2021.05.011" target="_blank" rel="noopener"><span class="pi">42</span><span class="py">2021</span><span><span class="pt">Modified-Frailty Index Does Not Independently Predict Complications After Lumbar Fusion</span> <span class="pv">· The Spine Journal</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2021.01.109" target="_blank" rel="noopener"><span class="pi">43</span><span class="py">2021</span><span><span class="pt">Pulmonary Risk Factors and Hospital Resource Use After Spinal Fusion for AIS</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2020.10.074" target="_blank" rel="noopener"><span class="pi">44</span><span class="py">2021</span><span><span class="pt">Impact of Preoperative Anemia on Outcomes After Posterior Spinal Fusion for AIS</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1016/j.wneu.2020.09.137" target="_blank" rel="noopener"><span class="pi">45</span><span class="py">2021</span><span><span class="pt">Characteristics of Reported Industry Payments to Neurosurgeons: A 5-Year Study</span> <span class="pv">· World Neurosurgery</span></span></a>
+        <a class="prow" href="https://doi.org/10.1126/sciadv.abb4205" target="_blank" rel="noopener"><span class="pi">46</span><span class="py">2020</span><span><span class="pt">The Bystander Effect in Rats</span> <span class="pv">· Science Advances</span></span></a>
       </div>
     </details>
 
-    <!-- In [7] : roles -->
+    <!-- In [8] : roles -->
     <section class="cell">
       <h2 class="sr-only">Roles</h2>
       <div class="io">
-        <div class="lbl">In [7]:</div>
+        <div class="lbl">In [8]:</div>
         <div class="code"><span class="o">havlik</span>.<span class="f">roles</span>()  <span class="c"># research, mentorship, venture</span></div>
       </div>
     </section>
@@ -574,11 +605,11 @@
       </div>
     </div>
 
-    <!-- In [8] : honors -->
+    <!-- In [9] : honors -->
     <section class="cell">
       <h2 class="sr-only">Honors</h2>
       <div class="io">
-        <div class="lbl">In [8]:</div>
+        <div class="lbl">In [9]:</div>
         <div class="code"><span class="o">havlik</span>.honors  <span class="c"># most recent</span></div>
       </div>
     </section>
@@ -610,11 +641,11 @@
       </div>
     </details>
 
-    <!-- In [9] : peer review -->
+    <!-- In [10] : peer review -->
     <section class="cell">
       <h2 class="sr-only">Peer review</h2>
       <div class="io">
-        <div class="lbl">In [9]:</div>
+        <div class="lbl">In [10]:</div>
         <div class="code"><span class="o">havlik</span>.peer_review  <span class="c"># reviewer / editorial board · 16 venues</span></div>
       </div>
     </section>
